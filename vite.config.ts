@@ -18,5 +18,13 @@ export default defineConfig({
         assetFileNames: 'assets/[name].[hash].[ext]'
       }
     }
+  },
+  server: {
+    fs: {
+      strict: true
+    }
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom']
   }
 })
